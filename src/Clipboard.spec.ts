@@ -6,7 +6,7 @@
 
 Object.defineProperty(navigator, "clipboard", {
   value: {
-    writeText: () => {},
+    writeText: jest.fn(),
   },
 });
 
