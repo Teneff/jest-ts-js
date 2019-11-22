@@ -26,5 +26,4 @@ All files          |      100 |      100 |      100 |      100 |                
 -------------------|----------|----------|----------|----------|-------------------|
 ```
 
-
 [so-question]: https://stackoverflow.com/questions/58889386/cover-abstract-class-method-with-tests-in-jest

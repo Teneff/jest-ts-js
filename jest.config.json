@@ -1,3 +1,11 @@
 {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "preset": "ts-jest/presets/js-with-ts",
+    "transform": {
+      "^.+\\.[jt]sx?$": ["ts-jest", {
+        "tsconfig": {
+          "allowJs": true
+        }
+      }]
+    }
 }

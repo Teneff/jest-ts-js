@@ -5,12 +5,20 @@ export default abstract class GenericService<Type> {
         this.modifiedUrl = new URL(url, window.location.href);
     }
 
+    private addQueryParams(filter?: URLSearchParams) {
+        if (filter) {
+            filter.forEach((value, key) => {
+                this.modifiedUrl.searchParams.set(key, value);
+            })
+        }
+    }
+
     public async get(path?: string, filter?: URLSearchParams): Promise<Type> {
         try {
             if (path) {
                 this.modifiedUrl.href += `${path}`;
             }
-            // addQueryParams(this.modifiedUrl, filter);
+            this.addQueryParams(filter);
 
             const response = await handleRequest(`${this.modifiedUrl}`, {
                 method: "GET"
