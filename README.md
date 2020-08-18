@@ -2,12 +2,18 @@
 
 created as answer for [StackOverflow question][so-question]
 
-## Uses
- - jest ❤️
- - babel
- - @babel/core
- - @babel/preset-env
- - @babel/preset-typescript
+## Branches
+### [master](./tree/master) using babel
+- jest ❤️
+- babel
+- @babel/core
+- @babel/preset-env
+- @babel/preset-typescript
+### [ts-jest](./tree/ts-jest) using ts-jest
+- jest ❤️
+- TypeScript ❤️
+- ts-jest
+
 
 ## Coverage 💯%
 
